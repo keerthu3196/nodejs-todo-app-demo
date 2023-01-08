@@ -10,10 +10,7 @@ jobs:
     name: Dependency-Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: DOwnload OWASP Dependency Check
+      - name: Download OWASP Dependency Check
         run: |
           VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
           curl -sL "https://github.com/jeremylong/DependencyCheck/releases/download/v$VERSION/dependency-check-$VERSION-release.zip" --output dependency-check.zip
