@@ -20,9 +20,6 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
-    - name: Build
-      run: npm run build
     
   dependency-check:
     name: Dependency-Check
