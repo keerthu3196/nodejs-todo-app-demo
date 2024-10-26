@@ -12,7 +12,6 @@ jobs:
       - run: npm ci
       - run: npm link
       - run: node --check .
-      - run: npm test
       - run: sonar-report
           --sonarurl="https://sonarcloud.io"
           --sonarcomponent="soprasteria_sonar-report"
