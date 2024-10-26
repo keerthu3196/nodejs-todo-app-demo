@@ -12,7 +12,7 @@ jobs:
       - run: npm ci
       - run: npm link
       - run: node --check .
-      - run: npm install sonar-report
+      - run: npm install -g sonar-report
       - run: npm fund
       - run: sonar-report
           --sonarurl="https://sonarcloud.io"
